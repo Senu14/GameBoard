@@ -1,20 +1,23 @@
-* {
-    padding: 0;
-    margin: 0;
-}
+
      
 body {
-       box-sizing: border-box;
+       margin: 40px;
+       /* box-sizing: border-box;
        background-color: black;
-       justify-content: center;
+       justify-content: center; */
        
-}  
-#gameboard {
-       flex: 3;
-       width: 100%;
+} 
+.wrapper{
        display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}    
+#gameboard {
+       border-radius: 5px;
+       padding: 20px;
+       font-size: 150%;
       
      }
      
