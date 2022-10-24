@@ -12,9 +12,9 @@ export const GoalModel=() =>{
                  picture:'/Assets/images/2.jpg'
               },
               {
-                     title: "sundhed og trivsel",
-                     goal: 3,
-                     picture:'/Assets/images/3.jpg'
+                  title: "sundhed og trivsel",
+                   goal: 3,
+                   picture:'/Assets/images/3.jpg'
                     },
                     {
                      title: " KVALITETSUDDANNELSE",

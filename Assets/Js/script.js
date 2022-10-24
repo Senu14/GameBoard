@@ -1,11 +1,13 @@
 //objects
-import { GoalModel } from "/model.js"
-const  gameboard=document.getElementById('gameboard') 
-const numCards= 5;
-const cardList= GoalModel()
+import { GoalModel } from "./model.js"
+const  gameboard = document.getElementById('gameboard') 
+const numCards = 5;
+let cardList = GoalModel()
+
+// This helps (match.random)to set the card randomly not by numbers.
 cardList.sort(() => Math.random()-0.5);
-cardList=cardList.slice(0,numCards)
-cardList=cardList.concat(cardList)
+cardList = cardList.slice(0,numCards)
+cardList = cardList.concat(cardList)
 cardList.sort(() => Math.random()-0.5);
 
 
@@ -13,5 +15,8 @@ for(let card of cardList){
        let div = document.createElement('div')
        div.innerText = card.goal
        gameboard.append(div)
+       let img =document.createElement('img')
+       img.src= card.picture
+       gameboard.append(img)
 }
-console.log(GoalModel())
+console.log(GoalModel());
