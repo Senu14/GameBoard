@@ -19,3 +19,11 @@ for(let card of cardList){
        img.src= card.picture
        gameboard.append(img)
 }
+
+
+ const card = document.getElementById("gameboard")
+ card.addEventListener("click",flipCard);
+       function flipCard(){
+               card.cardList.toggle("flipCard");
+ }
+
